@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libtimebase_posix_clock.a  CMakeFiles/timebase_posix_clock.dir/cfe_psp_timebase_posix_clock.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libtimebase_posix_clock.a

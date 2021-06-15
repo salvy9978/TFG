@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libsb_headercheck.a  CMakeFiles/sb_headercheck.dir/src/check_cfe_sb_msg.h.c.o CMakeFiles/sb_headercheck.dir/src/check_cfe_sb_events.h.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libsb_headercheck.a

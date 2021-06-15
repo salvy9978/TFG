@@ -1,0 +1,33 @@
+#---------------------------------------------------------------------------
+# Doxygen options to generate the complete mission documentation
+#---------------------------------------------------------------------------
+
+# Start with the common definitions, some of which are extended or overridden here.
+@INCLUDE               = /home/salvy9978/Prueba/build/doc/cfe-common.doxyfile
+PROJECT_NAME           = "SampleMission"
+PROJECT_BRIEF          = "Core Flight System project built using \"sample\" configuration"
+OUTPUT_DIRECTORY       = detaildesign
+
+INPUT                 += /home/salvy9978/Prueba/sample_defs  \
+                         /home/salvy9978/Prueba/osal/src/os/inc \
+                         /home/salvy9978/Prueba/osal/src/os/shared \
+                         /home/salvy9978/Prueba/psp/fsw/inc \
+                         /home/salvy9978/Prueba/psp/fsw/shared \
+                         /home/salvy9978/Prueba/cfe/modules/core_api/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/core_private/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/es/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/evs/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/fs/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/msg/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/resourceid/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/sb/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/sbr/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/tbl/fsw \
+                         /home/salvy9978/Prueba/cfe/modules/time/fsw
+
+STRIP_FROM_PATH       += /home/salvy9978/Prueba/sample_defs
+
+#---------------------------------------------------------------------------
+# The user content doxyfile contains paths to the mission-specific applications
+#---------------------------------------------------------------------------
+@INCLUDE               = /home/salvy9978/Prueba/build/doc/mission-content.doxyfile

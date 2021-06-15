@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libcpu1_to_lab_sub-obj.a  CMakeFiles/cpu1_to_lab_sub-obj.dir/fsw/tables/to_lab_sub.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libcpu1_to_lab_sub-obj.a

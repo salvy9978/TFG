@@ -1,0 +1,100 @@
+#---------------------------------------------------------------------------
+# Doxygen Configuration options to generate the "cFE Users Guide"
+#---------------------------------------------------------------------------
+
+# Start with the main page so document ordering is established
+INPUT                 += /home/salvy9978/Prueba/cfe/docs/src/main.dox
+
+# Common definitions, some of which are extended or overridden here.
+@INCLUDE               = /home/salvy9978/Prueba/build/doc/cfe-common.doxyfile
+PROJECT_NAME           = "Core Flight Executive Users Guide"
+OUTPUT_DIRECTORY       = users_guide
+GENERATE_LATEX         = YES
+
+# For purposes of the user guide, reference the "stock" mission configuration
+# Although missions may override these files, for the users guide we are mainly
+# interested in the documentation of those items.
+STRIP_FROM_PATH       += /home/salvy9978/Prueba/cfe/cmake/sample_defs
+INPUT                 += /home/salvy9978/Prueba/cfe/cmake/sample_defs
+
+#PREDEFINED
+PREDEFINED            += 
+
+# Bring in the cFE header files for the documentation of the various API calls
+INPUT                 += /home/salvy9978/Prueba/osal/src/os/inc/common_types.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-binsem.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-bsp.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-clock.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-common.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-constants.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-countsem.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-dir.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-error.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-file.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-filesys.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-heap.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-idmap.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-macros.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-module.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-mutex.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-network.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-printf.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-queue.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-select.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-shell.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-sockets.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-task.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-timebase.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-timer.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi-version.h \
+/home/salvy9978/Prueba/osal/src/os/inc/osapi.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_endian.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_error.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_es.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_es_api_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_es_core_internal.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_es_extern_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_evs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_evs_api_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_evs_core_internal.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_evs_extern_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_fs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_fs_api_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_fs_core_internal.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_fs_extern_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_msg.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_msg_api_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_resourceid.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_resourceid_api_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_sb.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_sb_api_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_sb_core_internal.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_sb_extern_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_tbl.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_tbl_api_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_tbl_core_internal.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_tbl_extern_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_tbl_filedef.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_time.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_time_api_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_time_core_internal.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_time_extern_typedefs.h \
+/home/salvy9978/Prueba/cfe/modules/core_api/fsw/inc/cfe_version.h \
+/home/salvy9978/Prueba/cfe/modules/es/fsw/inc/cfe_es_events.h \
+/home/salvy9978/Prueba/cfe/modules/es/fsw/inc/cfe_es_msg.h \
+/home/salvy9978/Prueba/cfe/modules/evs/fsw/inc/cfe_evs_events.h \
+/home/salvy9978/Prueba/cfe/modules/evs/fsw/inc/cfe_evs_msg.h \
+/home/salvy9978/Prueba/cfe/modules/msg/fsw/inc/ccsds_hdr.h \
+/home/salvy9978/Prueba/cfe/modules/sb/fsw/inc/cfe_sb_events.h \
+/home/salvy9978/Prueba/cfe/modules/sb/fsw/inc/cfe_sb_msg.h \
+/home/salvy9978/Prueba/cfe/modules/tbl/fsw/inc/cfe_tbl_events.h \
+/home/salvy9978/Prueba/cfe/modules/tbl/fsw/inc/cfe_tbl_msg.h \
+/home/salvy9978/Prueba/cfe/modules/time/fsw/inc/cfe_time_events.h \
+/home/salvy9978/Prueba/cfe/modules/time/fsw/inc/cfe_time_msg.h \
+/home/salvy9978/Prueba/build/doc/osconfig-example.h
+
+# Resolve references
+INPUT                 += /home/salvy9978/Prueba/psp/fsw/inc
+INPUT += /home/salvy9978/Prueba/psp/fsw/rpi-rtems/src
+INPUT += /home/salvy9978/Prueba/build/cpu1/default_cpu1/inc

@@ -1,0 +1,1 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ld  -o ci_lab.obj -r CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o 

@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libevs.a  CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libevs.a

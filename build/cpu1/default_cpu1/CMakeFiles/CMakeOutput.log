@@ -1,0 +1,160 @@
+The target system is: RTEMS - 5 - arm
+The host system is: Linux - 5.4.0-67-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000008000
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/3.10.2/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3cc9a/fast"
+make[1]: se entra en el directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_3cc9a.dir/build.make CMakeFiles/cmTC_3cc9a.dir/build
+make[2]: se entra en el directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3cc9a.dir/testCCompiler.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc   -D_RTEMS_5_ -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common     -o CMakeFiles/cmTC_3cc9a.dir/testCCompiler.c.o -c /home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_3cc9a.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cc9a.dir/link.txt --verbose=1
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common   -u Init -o cmTC_3cc9a.exe-prelink CMakeFiles/cmTC_3cc9a.dir/testCCompiler.c.o    -lrtemsdefaultconfig -lrtemsbsp -lrtemscpu 
+/home/salvy9978/development3/rtems-5/arm/bin/rtems-syms -v -e -c -mcpu=arm1176jzf-s -fno-common -C /home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc -o cmTC_3cc9a.exe-dl-sym.o cmTC_3cc9a.exe-prelink
+RTEMS Kernel Symbols 5.1b3f09251ae5
+kernel: cmTC_3cc9a.exe-prelink
+cache:load-sym: object files: 1
+cache:load-sym: symbols: 1310
+Filtered symbols: 941
+symbol C file: /tmp/ccMbdaaa.c
+symbol O file: cmTC_3cc9a.exe-dl-sym.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common   -u Init -o cmTC_3cc9a.exe cmTC_3cc9a.exe-dl-sym.o CMakeFiles/cmTC_3cc9a.dir/testCCompiler.c.o    -lrtemsdefaultconfig -lrtemsbsp -lrtemscpu 
+make[2]: se sale del directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+make[1]: se sale del directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b9cef/fast"
+make[1]: se entra en el directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b9cef.dir/build.make CMakeFiles/cmTC_b9cef.dir/build
+make[2]: se entra en el directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc   -D_RTEMS_5_ -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common     -o CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_b9cef.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9cef.dir/link.txt --verbose=1
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common   -u Init -o cmTC_b9cef.exe-prelink CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o   -v -lrtemsdefaultconfig -lrtemsbsp -lrtemscpu 
+Using built-in specs.
+Reading specs from /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/bsp_specs
+rename spec endfile to old_endfile
+rename spec startfile to old_startfile
+COLLECT_GCC=/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc
+COLLECT_LTO_WRAPPER=/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/lto-wrapper
+Target: arm-rtems5
+Configured with: ../gcc-7.5.0/configure --prefix=/home/salvy9978/development3/rtems-5/arm --bindir=/home/salvy9978/development3/rtems-5/arm/bin --exec_prefix=/home/salvy9978/development3/rtems-5/arm --includedir=/home/salvy9978/development3/rtems-5/arm/include --libdir=/home/salvy9978/development3/rtems-5/arm/lib --libexecdir=/home/salvy9978/development3/rtems-5/arm/libexec --mandir=/home/salvy9978/development3/rtems-5/arm/share/man --infodir=/home/salvy9978/development3/rtems-5/arm/share/info --datadir=/home/salvy9978/development3/rtems-5/arm/share --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-rtems5 --disable-libstdcxx-pch --with-gnu-as --with-gnu-ld --verbose --with-newlib --disable-nls --without-included-gettext --disable-win32-registry --enable-version-specific-runtime-libs --disable-lto --enable-newlib-io-c99-formats --enable-newlib-iconv --enable-newlib-iconv-encodings=big5,cp775,cp850,cp852,cp855,cp866,euc_jp,euc_kr,euc_tw,iso_8859_1,iso_8859_10,iso_8859_11,iso_8859_13,iso_8859_14,iso_8859_15,iso_8859_2,iso_8859_3,iso_8859_4,iso_8859_5,iso_8859_6,iso_8859_7,iso_8859_8,iso_8859_9,iso_ir_111,koi8_r,koi8_ru,koi8_u,koi8_uni,ucs_2,ucs_2_internal,ucs_2be,ucs_2le,ucs_4,ucs_4_internal,ucs_4be,ucs_4le,us_ascii,utf_16,utf_16be,utf_16le,utf_8,win_1250,win_1251,win_1252,win_1253,win_1254,win_1255,win_1256,win_1257,win_1258 --enable-threads --disable-plugin --enable-libgomp --enable-languages=c,c++
+Thread model: rtems
+gcc version 7.5.0 20191114 (RTEMS 5, RSB 5 (1b3f09251ae5 modified), Newlib 7947581) (GCC) 
+COMPILER_PATH=/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/
+LIBRARY_PATH=/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib/
+COLLECT_GCC_OPTIONS='-B' '/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib' '-specs=bsp_specs' '-qrtems' '-mcpu=arm1176jzf-s' '-fno-common' '-u' 'Init' '-o' 'cmTC_b9cef.exe-prelink' '-v'
+ /home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/collect2 -X -o cmTC_b9cef.exe-prelink -u Init /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crti.o /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtbegin.o -L/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -L/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0 -L/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o -lrtemsdefaultconfig -lrtemsbsp -lrtemscpu --start-group -lgcc --start-group -lrtemsbsp -lrtemscpu -latomic -lc -lgcc --end-group -T /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/linkcmds --end-group /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtend.o /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtn.o
+COLLECT_GCC_OPTIONS='-B' '/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib' '-specs=bsp_specs' '-qrtems' '-mcpu=arm1176jzf-s' '-fno-common' '-u' 'Init' '-o' 'cmTC_b9cef.exe-prelink' '-v'
+/home/salvy9978/development3/rtems-5/arm/bin/rtems-syms -v -e -c -mcpu=arm1176jzf-s -fno-common -C /home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc -o cmTC_b9cef.exe-dl-sym.o cmTC_b9cef.exe-prelink
+RTEMS Kernel Symbols 5.1b3f09251ae5
+kernel: cmTC_b9cef.exe-prelink
+cache:load-sym: object files: 1
+cache:load-sym: symbols: 1312
+Filtered symbols: 942
+symbol C file: /tmp/cc6bdaaa.c
+symbol O file: cmTC_b9cef.exe-dl-sym.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common   -u Init -o cmTC_b9cef.exe cmTC_b9cef.exe-dl-sym.o CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o   -v -lrtemsdefaultconfig -lrtemsbsp -lrtemscpu 
+Using built-in specs.
+Reading specs from /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/bsp_specs
+rename spec endfile to old_endfile
+rename spec startfile to old_startfile
+COLLECT_GCC=/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc
+COLLECT_LTO_WRAPPER=/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/lto-wrapper
+Target: arm-rtems5
+Configured with: ../gcc-7.5.0/configure --prefix=/home/salvy9978/development3/rtems-5/arm --bindir=/home/salvy9978/development3/rtems-5/arm/bin --exec_prefix=/home/salvy9978/development3/rtems-5/arm --includedir=/home/salvy9978/development3/rtems-5/arm/include --libdir=/home/salvy9978/development3/rtems-5/arm/lib --libexecdir=/home/salvy9978/development3/rtems-5/arm/libexec --mandir=/home/salvy9978/development3/rtems-5/arm/share/man --infodir=/home/salvy9978/development3/rtems-5/arm/share/info --datadir=/home/salvy9978/development3/rtems-5/arm/share --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-rtems5 --disable-libstdcxx-pch --with-gnu-as --with-gnu-ld --verbose --with-newlib --disable-nls --without-included-gettext --disable-win32-registry --enable-version-specific-runtime-libs --disable-lto --enable-newlib-io-c99-formats --enable-newlib-iconv --enable-newlib-iconv-encodings=big5,cp775,cp850,cp852,cp855,cp866,euc_jp,euc_kr,euc_tw,iso_8859_1,iso_8859_10,iso_8859_11,iso_8859_13,iso_8859_14,iso_8859_15,iso_8859_2,iso_8859_3,iso_8859_4,iso_8859_5,iso_8859_6,iso_8859_7,iso_8859_8,iso_8859_9,iso_ir_111,koi8_r,koi8_ru,koi8_u,koi8_uni,ucs_2,ucs_2_internal,ucs_2be,ucs_2le,ucs_4,ucs_4_internal,ucs_4be,ucs_4le,us_ascii,utf_16,utf_16be,utf_16le,utf_8,win_1250,win_1251,win_1252,win_1253,win_1254,win_1255,win_1256,win_1257,win_1258 --enable-threads --disable-plugin --enable-libgomp --enable-languages=c,c++
+Thread model: rtems
+gcc version 7.5.0 20191114 (RTEMS 5, RSB 5 (1b3f09251ae5 modified), Newlib 7947581) (GCC) 
+COMPILER_PATH=/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/
+LIBRARY_PATH=/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib/
+COLLECT_GCC_OPTIONS='-B' '/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib' '-specs=bsp_specs' '-qrtems' '-mcpu=arm1176jzf-s' '-fno-common' '-u' 'Init' '-o' 'cmTC_b9cef.exe' '-v'
+ /home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/collect2 -X -o cmTC_b9cef.exe -u Init /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crti.o /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtbegin.o -L/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -L/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0 -L/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib cmTC_b9cef.exe-dl-sym.o CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o -lrtemsdefaultconfig -lrtemsbsp -lrtemscpu --start-group -lgcc --start-group -lrtemsbsp -lrtemscpu -latomic -lc -lgcc --end-group -T /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/linkcmds --end-group /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtend.o /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtn.o
+COLLECT_GCC_OPTIONS='-B' '/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib' '-specs=bsp_specs' '-qrtems' '-mcpu=arm1176jzf-s' '-fno-common' '-u' 'Init' '-o' 'cmTC_b9cef.exe' '-v'
+make[2]: se sale del directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+make[1]: se sale del directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-rtems5-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_b9cef/fast"]
+  ignore line: [make[1]: se entra en el directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b9cef.dir/build.make CMakeFiles/cmTC_b9cef.dir/build]
+  ignore line: [make[2]: se entra en el directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc   -D_RTEMS_5_ -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common     -o CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_b9cef.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9cef.dir/link.txt --verbose=1]
+  ignore line: [/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common   -u Init -o cmTC_b9cef.exe-prelink CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o   -v -lrtemsdefaultconfig -lrtemsbsp -lrtemscpu ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/bsp_specs]
+  ignore line: [rename spec endfile to old_endfile]
+  ignore line: [rename spec startfile to old_startfile]
+  ignore line: [COLLECT_GCC=/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/lto-wrapper]
+  ignore line: [Target: arm-rtems5]
+  ignore line: [Configured with: ../gcc-7.5.0/configure --prefix=/home/salvy9978/development3/rtems-5/arm --bindir=/home/salvy9978/development3/rtems-5/arm/bin --exec_prefix=/home/salvy9978/development3/rtems-5/arm --includedir=/home/salvy9978/development3/rtems-5/arm/include --libdir=/home/salvy9978/development3/rtems-5/arm/lib --libexecdir=/home/salvy9978/development3/rtems-5/arm/libexec --mandir=/home/salvy9978/development3/rtems-5/arm/share/man --infodir=/home/salvy9978/development3/rtems-5/arm/share/info --datadir=/home/salvy9978/development3/rtems-5/arm/share --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-rtems5 --disable-libstdcxx-pch --with-gnu-as --with-gnu-ld --verbose --with-newlib --disable-nls --without-included-gettext --disable-win32-registry --enable-version-specific-runtime-libs --disable-lto --enable-newlib-io-c99-formats --enable-newlib-iconv --enable-newlib-iconv-encodings=big5,cp775,cp850,cp852,cp855,cp866,euc_jp,euc_kr,euc_tw,iso_8859_1,iso_8859_10,iso_8859_11,iso_8859_13,iso_8859_14,iso_8859_15,iso_8859_2,iso_8859_3,iso_8859_4,iso_8859_5,iso_8859_6,iso_8859_7,iso_8859_8,iso_8859_9,iso_ir_111,koi8_r,koi8_ru,koi8_u,koi8_uni,ucs_2,ucs_2_internal,ucs_2be,ucs_2le,ucs_4,ucs_4_internal,ucs_4be,ucs_4le,us_ascii,utf_16,utf_16be,utf_16le,utf_8,win_1250,win_1251,win_1252,win_1253,win_1254,win_1255,win_1256,win_1257,win_1258 --enable-threads --disable-plugin --enable-libgomp --enable-languages=c,c++]
+  ignore line: [Thread model: rtems]
+  ignore line: [gcc version 7.5.0 20191114 (RTEMS 5, RSB 5 (1b3f09251ae5 modified), Newlib 7947581) (GCC) ]
+  ignore line: [COMPILER_PATH=/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/]
+  ignore line: [LIBRARY_PATH=/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/:/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-B' '/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib' '-specs=bsp_specs' '-qrtems' '-mcpu=arm1176jzf-s' '-fno-common' '-u' 'Init' '-o' 'cmTC_b9cef.exe-prelink' '-v']
+  link line: [ /home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/collect2 -X -o cmTC_b9cef.exe-prelink -u Init /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crti.o /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtbegin.o -L/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -L/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0 -L/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o -lrtemsdefaultconfig -lrtemsbsp -lrtemscpu --start-group -lgcc --start-group -lrtemsbsp -lrtemscpu -latomic -lc -lgcc --end-group -T /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/linkcmds --end-group /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtend.o /home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtn.o]
+    arg [/home/salvy9978/development3/rtems-5/arm/libexec/gcc/arm-rtems5/7.5.0/collect2] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b9cef.exe-prelink] ==> ignore
+    arg [-u] ==> ignore
+    arg [Init] ==> ignore
+    arg [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crti.o] ==> ignore
+    arg [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtbegin.o] ==> ignore
+    arg [-L/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib] ==> dir [/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib]
+    arg [-L/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0] ==> dir [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0]
+    arg [-L/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib] ==> dir [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib]
+    arg [CMakeFiles/cmTC_b9cef.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lrtemsdefaultconfig] ==> lib [rtemsdefaultconfig]
+    arg [-lrtemsbsp] ==> lib [rtemsbsp]
+    arg [-lrtemscpu] ==> lib [rtemscpu]
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--start-group] ==> ignore
+    arg [-lrtemsbsp] ==> lib [rtemsbsp]
+    arg [-lrtemscpu] ==> lib [rtemscpu]
+    arg [-latomic] ==> lib [atomic]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--end-group] ==> ignore
+    arg [-T] ==> ignore
+    arg [/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/linkcmds] ==> ignore
+    arg [--end-group] ==> ignore
+    arg [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtend.o] ==> ignore
+    arg [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/crtn.o] ==> ignore
+  collapse library dir [/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib] ==> [/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib]
+  collapse library dir [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0] ==> [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0]
+  collapse library dir [/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/lib] ==> [/home/salvy9978/development3/rtems-5/arm/arm-rtems5/lib]
+  implicit libs: [rtemsdefaultconfig;rtemsbsp;rtemscpu;gcc;rtemsbsp;rtemscpu;atomic;c;gcc]
+  implicit dirs: [/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib;/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0;/home/salvy9978/development3/rtems-5/arm/arm-rtems5/lib]
+  implicit fwks: []
+
+

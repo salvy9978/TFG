@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libram_direct.a  CMakeFiles/ram_direct.dir/cfe_psp_ram_direct.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libram_direct.a

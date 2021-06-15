@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libtbl.a  CMakeFiles/tbl.dir/fsw/src/cfe_tbl_api.c.o CMakeFiles/tbl.dir/fsw/src/cfe_tbl_internal.c.o CMakeFiles/tbl.dir/fsw/src/cfe_tbl_task.c.o CMakeFiles/tbl.dir/fsw/src/cfe_tbl_task_cmds.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libtbl.a

@@ -1,0 +1,93 @@
+Detecting C [-std=c11] compiler features failed to compile with the following output:
+Change Dir: /home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_442ff/fast"
+make[1]: se entra en el directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_442ff.dir/build.make CMakeFiles/cmTC_442ff.dir/build
+make[2]: se entra en el directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_442ff.dir/feature_tests.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc   -D_RTEMS_5_ -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common    -std=c11 -o CMakeFiles/cmTC_442ff.dir/feature_tests.c.o -c /home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/feature_tests.c
+Linking C executable cmTC_442ff.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_442ff.dir/link.txt --verbose=1
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-gcc -B/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib -specs bsp_specs -qrtems -mcpu=arm1176jzf-s -fno-common   -u Init -o cmTC_442ff.exe-prelink CMakeFiles/cmTC_442ff.dir/feature_tests.c.o    
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/start.o: in function `bsp_start_hook_0_done':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/lib/libbsp/arm/raspberrypi/../../../../../../../../rtems/c/src/lib/libbsp/arm/raspberrypi/../../../../../../bsps/arm/shared/start/start.S:202: undefined reference to `_ISR_Stack_size'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/lib/libbsp/arm/raspberrypi/../../../../../../../../rtems/c/src/lib/libbsp/arm/raspberrypi/../../../../../../bsps/arm/shared/start/start.S:207: undefined reference to `_ISR_Stack_area_begin'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadrestart.o): in function `_Thread_Kill_zombies':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadrestart.c:237: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadsetstate.o): in function `_Thread_Set_state_locked':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadsetstate.c:48: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadsetstate.o): in function `_Thread_Set_state':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadsetstate.c:63: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadqflush.o): in function `_Thread_queue_Flush_critical':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadqflush.c:158: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(userextiterate.o): in function `_User_extensions_Iterate':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/userextiterate.c:225: undefined reference to `_User_extensions_Initial_count'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/userextiterate.c:225: undefined reference to `_User_extensions_Initial_extensions'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(wkspace.o): in function `_Workspace_Handler_initialization':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/wkspace.c:54: undefined reference to `_Workspace_Size'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(configstackspacesize.o): in function `rtems_configuration_get_stack_space_size':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/configstackspacesize.c:54: undefined reference to `_Stack_Space_size'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/configstackspacesize.c:54: undefined reference to `_Thread_Initial_thread_count'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(scheduler.o): in function `_Scheduler_Handler_initialization':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/scheduler.c:42: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(thread.o): in function `_Thread_Handler_initialization':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/thread.c:70: undefined reference to `_Thread_Information'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadchangepriority.o): in function `_Thread_Priority_update':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadchangepriority.c:350: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadclearstate.o): in function `_Scheduler_Unblock':
+/home/salvy9978/development3/rtems-5/rtems/cpukit/include/rtems/score/schedulerimpl.h:322: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadcreateidle.o): in function `_Thread_Create_idle':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadcreateidle.c:108: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadcreateidle.c:108: undefined reference to `_Thread_Idle_stack_size'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadcreateidle.c:108: undefined reference to `_Thread_Information'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadcreateidle.c:108: undefined reference to `_Thread_Idle_stacks'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadinitialize.o): in function `_Thread_Initialize':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadinitialize.c:283: undefined reference to `_Thread_Control_add_on_count'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadinitialize.c:283: undefined reference to `_Thread_Control_add_ons'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(isr.o): in function `_ISR_Handler_initialization':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/isr.c:78: undefined reference to `_ISR_Stack_area_begin'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/isr.c:78: undefined reference to `_ISR_Stack_size'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(libio_init.o): in function `rtems_libio_init':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/libio_init.c:61: undefined reference to `rtems_libio_number_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/libio_init.c:61: undefined reference to `rtems_libio_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(watchdogtick.o): in function `_Watchdog_Tick':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/watchdogtick.c:117: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(open.o): in function `open':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/open.c:170: undefined reference to `rtems_libio_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(close.o): in function `close':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/close.c:73: undefined reference to `rtems_libio_number_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/close.c:73: undefined reference to `rtems_libio_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(ftruncate.o): in function `ftruncate':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/ftruncate.c:37: undefined reference to `rtems_libio_number_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/ftruncate.c:37: undefined reference to `rtems_libio_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(termios.o): in function `rtems_termios_ioctl':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/termios.c:790: undefined reference to `_Watchdog_Ticks_per_second'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(semcreate.o): in function `_CORE_ceiling_mutex_Set_owner':
+/home/salvy9978/development3/rtems-5/rtems/cpukit/include/rtems/score/coremuteximpl.h:446: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(taskcreate.o): in function `rtems_task_create':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/rtems/src/taskcreate.c:134: undefined reference to `rtems_minimum_stack_size'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/rtems/src/taskcreate.c:134: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(tasksetscheduler.o): in function `_RBTree_Insert_inline':
+/home/salvy9978/development3/rtems-5/rtems/cpukit/include/rtems/score/rbtree.h:535: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(threadyield.o): in function `_Thread_Yield':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/score/src/threadyield.c:41: undefined reference to `_Scheduler_Table'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(lseek.o): in function `lseek':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/lseek.c:25: undefined reference to `rtems_libio_number_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/lseek.c:25: undefined reference to `rtems_libio_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(read.o): in function `read':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/read.c:36: undefined reference to `rtems_libio_number_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/read.c:36: undefined reference to `rtems_libio_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/raspberrypi/lib/librtemscpu.a(write.o): in function `write':
+/home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/write.c:39: undefined reference to `rtems_libio_number_iops'
+/home/salvy9978/development3/rtems-5/arm/lib/gcc/arm-rtems5/7.5.0/../../../../arm-rtems5/bin/ld: /home/salvy9978/development3/rtems-5/rpi_posix_enable/arm-rtems5/c/raspberrypi/cpukit/../../../../../rtems/c/src/../../cpukit/libcsupport/src/write.c:39: undefined reference to `rtems_libio_iops'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_442ff.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_442ff.exe'
+make[2]: *** [cmTC_442ff.exe] Error 1
+make[2]: se sale del directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_442ff/fast'
+make[1]: *** [cmTC_442ff/fast] Error 2
+make[1]: se sale del directorio '/home/salvy9978/Prueba/build/cpu1/default_cpu1/CMakeFiles/CMakeTmp'
+
+
+

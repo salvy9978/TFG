@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libport_notimpl.a  CMakeFiles/port_notimpl.dir/cfe_psp_port_notimpl.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libport_notimpl.a

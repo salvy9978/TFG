@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libcpu1_sch_lab_table-obj.a  CMakeFiles/cpu1_sch_lab_table-obj.dir/fsw/tables/sch_lab_table.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libcpu1_sch_lab_table-obj.a

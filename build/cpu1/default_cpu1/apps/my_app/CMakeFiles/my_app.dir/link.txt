@@ -1,0 +1,1 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ld  -o my_app.obj -r CMakeFiles/my_app.dir/fsw/src/my_app.c.o 

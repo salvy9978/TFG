@@ -1,0 +1,2 @@
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ar qc libcpu1_my_app_tbl-obj.a  CMakeFiles/cpu1_my_app_tbl-obj.dir/fsw/tables/my_app_tbl.c.o
+/home/salvy9978/development3/rtems-5/arm/bin/arm-rtems5-ranlib libcpu1_my_app_tbl-obj.a
